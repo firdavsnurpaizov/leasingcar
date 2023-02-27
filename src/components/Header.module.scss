@@ -1,0 +1,118 @@
+.header {
+  @media screen and (max-width: 767px) {
+    background-color: #000;
+  }
+
+  .wrapper {
+    padding: 28px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logoWrapper {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    cursor: pointer;
+
+    .mobileLogo {
+      display: none;
+    }
+
+    @media screen and (max-width: 767px) {
+      .logo {
+        display: none;
+      }
+      .mobileLogo {
+        display: block;
+      }
+      p {
+        display: none;
+      }
+    }
+
+    p {
+      font-weight: 400;
+      letter-spacing: 0.92px;
+      text-transform: lowercase;
+      color: rgba(17, 17, 17, 0.5);
+      border-left: 1px solid #C4C4C4;
+      padding-left: 17px;
+    }
+  }
+
+  .burgerMenu {
+    display: none;
+    cursor: pointer;
+  }
+
+  .mobileBurgerMenu {
+    display: none;
+    cursor: pointer;
+  }
+
+  .nav {
+    display: flex;
+    gap: 24px;
+
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: transparent;
+      border: 1px solid #FF9514;
+      border-radius: 40px;
+
+      font-weight: 700;
+      color: #FF9514;
+      width: 174px;
+      height: 48px;
+
+      &:hover {
+        background-color: #FF9514;
+        color: #fff;
+      }
+
+      &:active {
+        background-color: #FFA83D;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1023px) {
+    .burgerMenu {
+      display: block;
+    }
+    .nav {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .burgerMenu {
+      display: none;
+    }
+    .mobileBurgerMenu {
+      display: block;
+    }
+  }
+
+  .menu {
+    display: flex;
+    align-items: center;
+  }
+
+  .item {
+    list-style: none;
+    cursor: pointer;
+    font-weight: 700;
+    color: #575757;
+    padding: 6px 16px;
+
+    &:hover {
+      background: #F3F3F4;
+      border-radius: 8px;
+    }
+  }
+}

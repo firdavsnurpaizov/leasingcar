@@ -2,6 +2,7 @@ import Head from 'next/head'
 import styles from '@/styles/Home.module.scss'
 import Header from "@/components/Header";
 import Carousel from "@/components/Carousel";
+import Calculation from "@/components/Calculation";
 
 // const inter = Inter({subsets: ['latin']})
 
@@ -17,6 +18,7 @@ export default function Home() {
             <main className={styles.main}>
                 <Header/>
                 <Carousel/>
+                <Calculation/>
             </main>
         </>
     )

@@ -1,7 +1,6 @@
 import styles from "./Header.module.scss"
 import Image from "next/image";
 
-
 export default function Header() {
     return (
         <div className={styles.header}>
@@ -13,7 +12,7 @@ export default function Header() {
                             width="200"
                             height="35"
                             alt="logo"
-                            className={styles.logo}
+                            className={styles.mainLogo}
                         />
                         <Image
                             src="/header-svg/mobile-logo.svg"
